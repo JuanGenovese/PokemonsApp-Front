@@ -1,0 +1,102 @@
+.mainContainer {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(66, 66, 66);
+  height: 15vh;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.formBusqueda {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  padding: 0;
+}
+
+.formBusqueda input {
+  border: none;
+  width: 600px;
+  height: 30px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-left: 15px;
+  transition: .2s;
+}
+
+.formBusqueda input:focus {
+  transition: .2s;
+  transform: scale(1.01);
+}
+
+.formBusqueda button {
+  border: none;
+  width: 100px;
+  height: 32.5px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.formBusqueda button:active {
+  transform: scale(0.97);
+}
+
+.NavLink {
+  color: #ececec;
+  font-size: x-large;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.NavLink:hover{
+  transition: .3s;
+  transform: scale(1.05);
+}
+
+.Pokemon {
+  height: 75px;
+}
+
+@media (max-width: 414px) {
+  .mainContainer{
+    height: 80px;
+  }
+  
+  .formBusqueda input {
+    width: 100px;
+    height: 7.5px;
+    font-size: xx-small;
+  }
+
+  .formBusqueda button {
+    width: 35px;
+    height: 10px;
+    font-size: 0.1%;
+  }
+
+  .Pokemon {
+    height: 30px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .NavLink {
+    font-size: small;
+    transform: scale(0.8);
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .formBusqueda input {
+    width: 85px;
+  }
+}

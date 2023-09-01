@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d3d3d3;
+    font-family: sans-serif;
+}
+
+.App{
+    margin-top: 18vh;
+}
+
+@media screen and (max-width:420px) {
+    .App {
+        margin-top: 100px;
+    }
+}

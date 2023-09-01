@@ -1,0 +1,30 @@
+.formFiltros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select {
+    flex-direction: row;
+    font-size: large;
+    border: none;
+    background-color: rgb(66, 66, 66);
+    color: #d3d3d3;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.select:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 420px) {
+    .formFiltros {
+        transform: scale(0.9);
+    }
+}
